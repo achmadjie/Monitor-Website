@@ -1,0 +1,86 @@
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 0 9.375rem;
+}
+
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7.5rem;
+    margin-top: 5rem;
+}
+
+.image img {
+    width: 25rem;
+}
+
+.image {
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 4.063rem;
+    font-weight: 600;
+    color: var(--gainsboro);
+}
+
+.content {
+    color: var(--gainsboro);
+    margin-top: 3.125rem;
+}
+
+.content p {
+    margin-bottom: 1.563rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    text-align: start;
+}
+
+@media screen and (max-width: 391px) {
+    
+    .about {
+        margin: 0 2.813rem;
+    }
+    
+    .about_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .image {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .image img {
+        border-radius: 25px;
+        width: 9.375rem;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--gainsboro);
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+    
+    .content {
+        color: var(--gainsboro);
+        margin-top: 1.25rem;
+        text-align: start;
+    }
+    
+    .content p {
+        margin-bottom: 1.563rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+}

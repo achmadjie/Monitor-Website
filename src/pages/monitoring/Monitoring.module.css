@@ -1,0 +1,129 @@
+.monitoring {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.125rem;
+}
+
+.monitor_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 8.75rem 0 8.75rem;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+}
+
+.column_first {
+    font-weight: 600;
+    font-size: 1.563rem;
+    color: var(--gainsboro);
+}
+
+.column_second {
+    font-weight: 600;
+    font-size: 1.563rem;
+    color: var(--gainsboro);
+}
+
+.time span {
+    font-weight: 400;
+    font-size: 1.563rem;
+}
+
+.new_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new_button button {
+    background-color: var(--gainsboro);
+    border-radius: var(--rounded-50);
+    width: 12.25rem;
+    height: 2.5rem;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    color: var(--dusk);
+    margin-left: 2.688rem;
+}
+
+.plus {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--dusk);
+    color: var(--gainsboro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -0.125rem;
+}
+
+@media screen and (max-width: 400px) {
+    
+    .monitoring {
+        row-gap: 1.75rem;
+    }
+
+    .monitor_head {
+        margin: 1rem 2.5rem 0 2.5rem;
+        flex-direction: column;
+    }
+    
+    .time, .time span {
+        font-size: 1rem;
+    }
+
+    .time {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .space_column {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .new_button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .new_button button {
+        width: 6.625rem;
+        height: 1.5rem;
+    }
+    
+    .text {
+        margin-left: 0.938rem;
+        font-size: 0.625rem;
+    }
+    
+    .plus {
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: -0.125rem;
+    }
+
+    .plus img {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+}

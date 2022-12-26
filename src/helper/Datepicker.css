@@ -1,0 +1,20 @@
+.ant-picker {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.ant-picker span, .ant-picker-focused span {
+    display: none;
+}
+
+.ant-picker-input {
+    width: 18.75rem;
+}
+
+.ant-picker input {
+    font-weight: 400;
+    font-size: 1.563rem;
+    color: var(--gainsboro);
+    text-align: center;
+}

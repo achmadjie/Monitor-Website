@@ -1,0 +1,19 @@
+.NoData {
+    display: flex;
+    height: 10.75rem;
+    border-left: 3px solid var(--gainsboro);
+    border-right: 3px solid var(--gainsboro);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gainsboro);
+    font-size: 1.563rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 400px)  {
+    .NoData {
+        height: 8.75rem;
+    }
+}

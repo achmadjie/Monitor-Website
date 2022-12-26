@@ -1,0 +1,50 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.125rem;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+}
+
+.column_first {
+    font-weight: 600;
+    font-size: 1.563rem;
+    color: var(--gainsboro);
+}
+
+.column_second {
+    font-weight: 600;
+    font-size: 1.563rem;
+    color: var(--gainsboro);
+}
+
+.time span {
+    font-weight: 400;
+    font-size: 1.563rem;
+}
+
+@media screen and (max-width: 400px) {
+    
+    .homepage {
+        row-gap: 1.75rem;
+    }
+    
+    .time, .time span {
+        font-size: 1.25rem;
+    }
+
+    .time {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .space_column {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

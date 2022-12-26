@@ -1,0 +1,7 @@
+.content_line {
+    margin: 0.625rem 0;
+    border: none;
+    border-top: solid 0.125rem var(--dusk);
+    padding: 0;
+    width: 100%;
+}

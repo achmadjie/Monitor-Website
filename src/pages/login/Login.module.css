@@ -1,0 +1,186 @@
+.signup_container {
+  background: linear-gradient(
+    167.95deg,
+    #363062 20.7%,
+    rgba(130, 115, 151, 0.825798) 99.22%,
+    rgba(90, 80, 123, 0) 100%
+  );
+}
+
+.monitor_background {
+  position: relative;
+  width: 100%;
+  height: 18.125rem;
+}
+
+.monitor_logo {
+  position: absolute;
+  width: 18.75rem;
+  height: auto;
+  left: 2.813rem;
+  top: 5rem;
+}
+
+.login_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.188rem;
+  font-weight: 700;
+  color: #e9d5da;
+  margin: 1.25rem auto;
+}
+
+.signup_link {
+  font-weight: 400;
+  font-size: 0.938rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #e9d5da;
+  margin: auto auto 4.75rem 1.563rem;
+}
+
+.signup_link a {
+  color: #827397;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email_pass_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 3.75rem;
+  margin-bottom: 6.875rem;
+}
+
+.error_mess {
+  color: #e9d5da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.625rem;
+  font-size: 0.813rem;
+}
+
+.email {
+  width: 21.563rem;
+  height: 3.75rem;
+  background-color: #4d4c7d;
+  border: 0.125rem solid #e9d5da;
+  border-radius: 0.938rem;
+  padding-left: 0.938rem;
+  color: #e9d5da;
+}
+
+.pass_container {
+  position: relative;
+  display: flex;
+  column-gap: 0.313rem;
+}
+
+.password {
+  width: 21.563rem;
+  height: 3.75rem;
+  background-color: #4d4c7d;
+  border: 0.125rem solid #e9d5da;
+  border-radius: 0.938rem;
+  padding-left: 0.938rem;
+  color: #e9d5da;
+  position: relative;
+}
+
+.password::placeholder {
+  color: #827397;
+  font-weight: 400;
+}
+
+.eye {
+  font-size: 0.938rem;
+  color: #e9d5da;
+}
+
+.eye_pass {
+  position: absolute;
+  z-index: 1;
+  top: 1.2rem;
+  left: 18.75rem;
+}
+
+.submit_form {
+  width: 21.563rem;
+  height: auto;
+  height: 3.75rem;
+  background: #e9d5da;
+  border-radius: 3.125rem;
+  margin-bottom: 5.625rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #4d4c7d;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .login_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding-right: 5.625rem;
+  }
+
+  .login_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login_form_desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6.25rem;
+  }
+
+  .monitor_background {
+    width: 62.5rem;
+    height: 47.5rem;
+  }
+
+  .monitor_logo {
+    width: 25rem;
+    height: auto;
+    left: 18.75rem;
+    top: 17.5rem;
+  }
+
+  .login_text {
+    font-size: 3.75rem;
+  }
+
+  .signup_link {
+    margin-left: 0.063rem;
+  }
+
+  .email_pass_form {
+    gap: 3.125rem;
+  }
+
+  .error_mess_username{
+    width: 80%;
+  }
+
+  .submit_form {
+    margin-bottom: 0;
+  }
+}

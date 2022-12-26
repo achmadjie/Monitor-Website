@@ -1,0 +1,36 @@
+.monitor_keyword {
+    background-color: var(--greyish-purple);
+    margin: auto;
+    border-radius: var(--rounded-40);
+    display: flex;
+    flex-direction: column;
+}
+
+.monitor_button {
+    display: flex;
+    justify-content: right;
+    gap: 0.625rem;
+    margin-right: 2.5rem;
+    margin-top: 1.563rem;
+}
+
+.wrapper_button {
+    width: 6.25rem;
+    height: 2.188rem;
+    background-color: var(--dusk);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--rounded-15);
+    border: none;
+    color: var(--gainsboro);
+    font-weight: 500;
+    gap: 0.313rem;
+}
+
+@media screen and (max-width: 400px) {
+    .monitor_button {
+        justify-content: center;
+        margin-right: 0;
+    }
+}

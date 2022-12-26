@@ -1,0 +1,210 @@
+.cardkeyword {
+    width: 65rem;
+    height: 15.625rem;
+    border-radius: var(--rounded-40);
+    background-color: var(--greyish-purple);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    margin: auto;
+}
+
+.title_keyword {
+    color: var(--gainsboro);
+    font-size: 1.563rem;
+    font-weight: 600;
+    width: 140px;
+    line-height: 30px;
+}
+
+.image_keyword img {
+    width: 8.75rem;
+    height: 8.75rem;
+    object-fit: cover;
+    object-position: 50% 5%;
+    border-radius: 5px;
+}
+
+.container_socmed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.wrapper_socmed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.socmed {
+    width: 12.5rem;
+    height: 4.375rem;
+    display: flex;
+    border-radius: var(--rounded-15);
+    background-color: var(--dusk);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    color: var(--gainsboro);
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+
+.socmed:hover {
+    background-color: var(--gainsboro);
+    color: var(--dusk);
+    cursor: pointer;
+}
+
+.socmed img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.socmed .hover_img {
+    display: none;
+}
+
+.socmed:hover .socmed_img {
+    display: none;
+}
+
+.socmed:hover .hover_img {
+    display: inline;
+}
+
+.numfound {
+    font-size: 1.563rem;
+    font-weight: 600;
+}
+
+.content_socmed {
+    width: 13.125rem;
+    height: 10.75rem;
+    overflow: auto;
+    text-align: start;
+}
+
+.content_socmed::-webkit-scrollbar {
+    display: none;
+}
+
+.content_socmed a {
+    text-decoration: none;
+    color: var(--gainsboro);
+}
+
+.top_keyword {
+    height: 10.75rem;
+    width: 12.5rem;
+    background-color: var(--dusk);
+    border-radius: var(--rounded-15);
+    padding: 1rem;
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title_top_keyword {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--gainsboro);
+    margin-bottom: 1rem;
+}
+
+.content_top_keyword {
+    font-size: 0.625rem;
+    color: var(--gainsboro);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.content_top_keyword::-webkit-scrollbar {
+    display: none;
+}
+
+.num_top_keyword {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    
+    .cardkeyword {
+        width: 18.75rem;
+        height: 100%;
+        padding: 1.75rem;
+        justify-content: center;
+        row-gap: 1.25rem ;
+    }
+
+    .image_keyword img {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .title_keyword {
+        font-size: 1.25rem;
+    }
+
+    .socmed {
+        width: 6.875rem;
+        height: 3.125rem;
+        padding: 0 0.75rem;
+    }
+
+    .socmed span {
+        display: none;
+    }
+
+    .socmed img {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .content_socmed {
+        width: 15rem;
+        height: 8.75rem;
+    }
+
+    .top_keyword {
+        height: 9.688rem;
+        width: 15rem;
+        padding: 1rem;
+    }
+    
+    .title_top_keyword {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+    
+    .content_top_keyword {
+        font-size: 0.625rem;
+        color: var(--gainsboro);
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+    
+    .content_top_keyword::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .num_top_keyword {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+}

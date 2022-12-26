@@ -1,0 +1,18 @@
+.page_container h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--gainsboro);
+}
+
+.page_container h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--gainsboro);
+}
+
+.page_container h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    color: var(--greyish-purple);
+}

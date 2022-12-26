@@ -1,0 +1,155 @@
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  flex-wrap: nowrap;
+  width: auto;
+  height: auto;
+}
+
+/* Nav Left */
+.nav_left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width: 15.625rem;
+  height: 6.875rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5rem;
+  font-size: 0.938rem;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--gainsboro);
+  font-size: 1.563rem;
+}
+
+.vert_rule {
+  transform: rotate(90deg);
+  border: none;
+  border-bottom: 0.063rem solid #e9d5da;
+  width: 4.375rem;
+  height: auto;
+}
+
+.all_menu {
+  display: flex;
+}
+
+/* Nav Right */
+.nav_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.login_button, .login_button a {
+  background-color: var(--gainsboro);
+  color: var(--dusk);
+  border-radius: var(--rounded-15);
+  width: 6.875rem;
+  height: 3.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.signup_button button, .signup_button a {
+  background-color: var(--greyish-purple);
+  color: var(--gainsboro);
+  border-radius: var(--rounded-15);
+  width: 6.875rem;
+  height: 3.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+/* Media Quary */
+
+@media screen and (min-width: 401px) {
+  .mobile_menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .logo {
+    width: 7.188rem;
+    height: auto;
+  }
+
+  .mobile_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login_button, .login_button a {
+    width: 5rem;
+    height: 1.563rem;
+    font-size: 0.625rem;
+    padding: 0.938rem;
+  }
+
+  .hamburger_menu {
+    background-color: var(--purple);
+  }
+
+  .menu_icon {
+    width: 2.188rem;
+    height: 2.188rem;
+    background-color: var(--purple);
+    border: 0;
+    color: var(--gainsboro);
+  }
+
+  #hamburger-inp + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+  }
+  #hamburger-inp:checked ~ .overlay {
+    visibility: visible;
+    opacity: 0.4;
+  }
+
+  .hamburger_menu .sidebar_menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -15.625rem;
+    width: 12.5rem;
+    height: 100%;
+    transition: 0.3s;
+  }
+
+  .all_menu,
+  .signup_button {
+    display: none;
+  }
+}

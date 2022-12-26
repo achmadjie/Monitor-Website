@@ -1,0 +1,124 @@
+.footer {
+    margin-top: 9rem;
+    background-color: var(--gainsboro);
+    width: 100%;
+}
+
+.social_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.188rem;
+    padding-top: 2.813rem;
+}
+
+.wrapper_socmed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 4.063rem;
+    width: 4.063rem;
+    background-color: var(--dusk);
+}
+
+.navbar_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.125rem;
+}
+
+.wrapper_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding: 0 0.938rem 3.125rem 0.938rem;
+}
+
+.link_footer {
+    text-decoration: none;
+    color: var(--dusk);
+    font-size: 1.563rem;
+}
+
+.wrapper_line {
+    display: flex;
+    justify-content: center;
+}
+
+.line_footer {
+    display: flex;
+    border: none;
+    border-top: solid 0.188rem var(--dusk);
+    width: 90%;
+}
+
+.copyright {
+    display: flex;
+    font-size: 1.563rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    color: var(--dusk);
+    padding: 2rem 0;
+}
+
+@media screen and (max-width: 400px) {
+    
+    .footer {
+        margin-top: 4rem;
+    }
+
+    .social_media {
+        gap: 0.625rem;
+        padding-top: 0.813rem;
+    }
+    
+    .wrapper_socmed {
+        height: 1.125rem;
+        width: 1.125rem;
+    }
+
+    .wrapper_socmed img {
+        width: 0.703rem;
+        height: 0.703rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar_footer {
+        padding-top: 0.75rem;
+    }
+    
+    .wrapper_navbar {
+        gap: 1.313rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .wrapper_navbar a {
+        font-size: 0.875rem;
+    }
+
+    .wrapper_line {
+        display: flex;
+        justify-content: center;
+    }
+
+    .line_footer {
+        border-top: solid 0.125rem var(--dusk);
+        width: 80%;
+    }
+
+    .link_footer {
+        font-size: 0.875rem;
+    }
+    
+    .copyright {
+        font-size: 0.875rem;
+        padding: 0.438rem 0;
+    }
+
+}

@@ -1,0 +1,111 @@
+.modal_remove {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.remove_keyword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 18.75rem;
+    background-color: var(--gainsboro);
+    border-radius: var(--rounded-15);
+    margin: auto;
+    row-gap: 2.5rem;
+}
+
+.wrapper_title{
+    color: var(--dusk);
+    font-size: 1rem;
+}
+
+.title_keyword {
+    font-weight: 400;
+}
+
+.wrapper_desc {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 0.625rem;
+    color: var(--dusk);
+}
+.desc {
+    font-weight: 500;
+    font-size: 0.938rem;
+    line-height: 1.125rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.cancel_button {
+    font-size: 1.25rem;
+    color: var(--dusk);
+    background: none;
+    border: none;
+}
+
+.remove_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0px;
+    gap: 10px;
+    border-radius: var(--rounded-50);
+    background-color: var(--dusk);
+    color: var(--gainsboro);
+    width: 6.25rem;
+    height: 1.875rem;
+}
+
+@media screen and (max-width: 400px) {
+    .remove_keyword {
+        width: 15rem;
+        margin: auto;
+        row-gap: 1.5rem;
+    }
+
+    .wrapper_title {
+        font-size: 0.7rem;
+    }
+
+    .desc {
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+    }
+
+    .cancel_button {
+        font-size: 0.8rem;
+    }
+    
+    .remove_button {
+        font-size: 0.8rem;
+        width: 5rem;
+        height: 1.75rem;
+    }
+}
